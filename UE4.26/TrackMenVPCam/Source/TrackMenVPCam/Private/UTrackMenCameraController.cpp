@@ -64,7 +64,7 @@ void UTrackMenCameraController::ApplyTransformData()
 		USceneComponent* node = Cast<USceneComponent>(AttachedComponent);
 		if (nullptr != node)
 		{
-			TransformData.ApplyTransform(node, TrackingFrame.Transform);
+			TransformData.ApplyTransform(node, TrackingFrame.Transform, TrackingStatic);
 		}
 	}
 }
